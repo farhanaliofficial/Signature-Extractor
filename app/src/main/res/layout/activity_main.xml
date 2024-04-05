@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<com.google.android.material.appbar.AppBarLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+		<androidx.appcompat.widget.Toolbar
+			android:id="@+id/toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+	</com.google.android.material.appbar.AppBarLayout>
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center"
+		android:background="#FFF9F9F9">
+
+		<EditText
+			android:layout_width="200dp"
+			android:layout_height="wrap_content"
+			android:hint="Package Name"
+			android:singleLine="true"
+			android:id="@+id/packageName"
+			android:inputType="text|textNoSuggestions"
+			android:background="#99FFFFFF"
+			android:padding="10dp"
+			android:elevation="10dp"/>
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Get"
+			android:layout_margin="15dp"
+			android:id="@+id/getBtn"
+			android:elevation="10dp"
+			android:background="@drawable/btn_bg"
+			android:textColor="#FFFFFFFF"/>
+
+		<ScrollView
+			android:layout_width="match_parent"
+			android:layout_height="100dp"
+			android:padding="15dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/sigText"
+				android:textIsSelectable="true"/>
+
+		</ScrollView>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Developed by Farhan Ali"
+			android:color="@color/colorPrimary"
+			android:layout_marginTop="15dp"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+
